@@ -1,5 +1,4 @@
 import requests
-import ast
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -7,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 #Autentificacion.
 url = "https://api.pdffiller.com/v2/oauth/token"
 
-payload = "{\"grant_type\":\"password\",\"client_id\":\"9fd0316acc5708bd\",\"username\":\"11-11486@usb.ve\",\"password\":\"SFLbssW@7DeL6fV\",\"client_secret\":\"sQMVpPxsAI1atkrroEasVubEgXZ3eVYy\"}"
+payload = '{"grant_type":"password","client_id":"9fd0316acc5708bd","username":"11-11486@usb.ve","password":"SFLbssW@7DeL6fV","client_secret":"sQMVpPxsAI1atkrroEasVubEgXZ3eVYy"}'
 headers = {
     'accept': "application/json; charset=UTF-8",
     'content-type': "application/json"
