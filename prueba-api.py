@@ -49,7 +49,7 @@ if response.status_code == 200:
 	response = requests.post(url, headers=headers, files=files,data=data)
 
 
-	if response.status_code == 200:
+	if response.status_code < 200:
 		headers = {
     	'Authorization': "Bearer %s" %access_token,
     	'Content-Type': 'application/json',
